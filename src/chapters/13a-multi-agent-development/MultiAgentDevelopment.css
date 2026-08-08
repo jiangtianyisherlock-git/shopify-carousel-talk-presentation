@@ -1,0 +1,53 @@
+.ma-scene { position: absolute; inset: 0; overflow: hidden; color: var(--text); font-family: var(--font-body); }
+.ma-title { position: absolute; left: 88px; top: 76px; width: 510px; }
+.ma-title > p { margin: 0 0 18px; color: var(--accent); font-size: 14px; letter-spacing: .13em; }
+.ma-title h1 { margin: 0; font-size: 57px; line-height: 1.03; }
+.ma-title h1 em { color: var(--accent); font-style: normal; }
+.ma-title > span { display: block; margin-top: 24px; max-width: 480px; color: var(--text-2); font-size: 18px; line-height: 1.62; }
+
+.ma-board { position: absolute; left: 625px; right: 64px; top: 58px; bottom: 92px; padding: 25px 28px 22px; display: grid; grid-template-rows: 270px 222px 188px 102px; gap: 12px; background: color-mix(in srgb, var(--surface-2) 93%, transparent); border: 1px solid var(--rule); box-shadow: var(--card-shadow); }
+.ma-band, .ma-delivery { opacity: .12; transform: translateY(8px); transition: opacity .42s var(--ease-quart), transform .42s var(--ease-quart); }
+.ma-band.is-visible, .ma-delivery.is-visible { opacity: 1; transform: none; }
+.ma-band { position: relative; padding-left: 176px; border-top: 1px solid var(--rule); }
+.ma-band:first-child { border-top: 0; }
+.ma-band__label { position: absolute; left: 0; top: 22px; width: 148px; }
+.ma-band__label span { display: block; color: var(--accent); font-size: 10px; letter-spacing: .09em; }
+.ma-band__label strong { display: block; margin-top: 10px; font-size: 18px; line-height: 1.35; }
+
+.ma-module-agents { height: 208px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 18px; }
+.ma-module-agents article { position: relative; height: 146px; padding: 18px 17px; background: var(--surface); border: 1px solid color-mix(in srgb, var(--rule) 80%, transparent); border-radius: 12px; box-shadow: 0 12px 26px rgba(69, 46, 32, .07); }
+.ma-module-agents article::after { content: ""; position: absolute; left: 50%; bottom: -20px; width: 1px; height: 19px; background: var(--accent); opacity: .55; }
+.ma-module-agents i, .ma-integration-pair i, .ma-qa-card i { color: var(--accent); font-size: 10px; font-style: normal; letter-spacing: .05em; }
+.ma-module-agents strong { display: block; margin-top: 12px; font-family: var(--font-display-en); font-size: 18px; line-height: 1.15; }
+.ma-module-agents p { margin: 8px 0 0; color: var(--text-2); font-family: var(--font-mono); font-size: 10px; overflow-wrap: anywhere; }
+.ma-module-agents small { position: absolute; left: 17px; bottom: 15px; color: var(--accent); font-size: 9px; }
+.ma-collab-map { position: absolute; left: 176px; right: 0; bottom: -2px; height: 64px; overflow: visible; }
+.ma-collab-map svg { width: 100%; height: 100%; overflow: visible; }
+.ma-collab-map path { fill: none; stroke: color-mix(in srgb, var(--accent) 60%, var(--rule)); stroke-width: 1.35; vector-effect: non-scaling-stroke; stroke-dasharray: 900; stroke-dashoffset: 900; animation: ma-route-draw 1.15s .15s var(--ease-quart) forwards; }
+.ma-collab-map circle { fill: var(--accent); opacity: .82; filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 45%, transparent)); }
+.ma-collab-map > span { position: absolute; left: 50%; top: 24px; padding: 4px 10px; color: var(--accent); background: var(--surface-2); border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--rule)); border-radius: 999px; font-size: 8px; letter-spacing: .07em; transform: translateX(-50%); white-space: nowrap; }
+@keyframes ma-route-draw { to { stroke-dashoffset: 0; } }
+
+.ma-integrate { padding-top: 18px; }
+.ma-integration-pair { height: 180px; padding: 15px 24px; display: grid; grid-template-columns: 1fr 124px 1fr; align-items: center; background: color-mix(in srgb, var(--accent-soft) 55%, var(--surface)); border: 1px solid var(--rule); border-radius: 16px; }
+.ma-integration-pair article { min-width: 0; padding: 18px 20px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; box-shadow: 0 9px 20px rgba(69, 46, 32, .055); }
+.ma-integration-pair article strong { display: block; margin-top: 9px; font-family: var(--font-display-en); font-size: 19px; line-height: 1.12; }
+.ma-integration-pair article p { margin: 9px 0 0; color: var(--text-2); font-size: 12px; line-height: 1.4; }
+.ma-api-link { display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--accent); }
+.ma-api-link span { padding: 5px 9px; border: 1px solid var(--accent); border-radius: 999px; background: var(--surface-2); font-size: 9px; }
+.ma-api-link b { margin-top: 2px; font-size: 28px; font-weight: 400; line-height: 1; }
+.ma-api-link small { color: var(--text-2); font-size: 11px; }
+
+.ma-verify { padding-top: 18px; }
+.ma-qa-card { height: 118px; padding: 16px 20px; display: grid; grid-template-columns: 160px 1fr 1fr; align-items: center; column-gap: 18px; background: var(--surface); border: 1px solid var(--accent); border-radius: 12px; }
+.ma-qa-card strong { font-family: var(--font-display-en); font-size: 19px; }
+.ma-qa-card p { margin: 0; color: var(--text-2); font-size: 13px; }
+.ma-feedback { position: absolute; left: 176px; right: 0; bottom: 2px; height: 29px; display: flex; align-items: center; justify-content: center; gap: 11px; color: var(--accent); border-top: 1px solid var(--accent); border-radius: 50%; font-size: 10px; letter-spacing: .04em; }
+.ma-feedback b { font-size: 18px; font-weight: 400; }
+
+.ma-delivery { padding: 15px 22px; display: grid; grid-template-columns: 190px 1fr; align-items: center; color: var(--surface); background: var(--accent); border-radius: 12px; }
+.ma-delivery > span { font-size: 9px; letter-spacing: .09em; }
+.ma-delivery > div { display: flex; align-items: center; justify-content: space-around; }
+.ma-delivery strong { font-size: 19px; font-weight: 600; }
+.ma-delivery i { font-family: var(--font-display-en); font-size: 28px; font-style: normal; opacity: .65; }
+@media (prefers-reduced-motion: reduce) { .ma-scene * { animation: none !important; transition-duration: 1ms !important; } .ma-collab-map path { stroke-dashoffset: 0; } .ma-collab-map circle { display: none; } }

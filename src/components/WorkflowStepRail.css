@@ -1,0 +1,6 @@
+.wf-rail { position: absolute; z-index: 20; left: 90px; right: 90px; bottom: 12px; height: 58px; display: grid; grid-template-columns: repeat(8, 1fr); border-top: 1px solid var(--rule); }
+.wf-rail span { position: relative; display: grid; grid-template-columns: 26px 1fr; align-content: start; column-gap: 6px; padding-top: 9px; color: var(--text-mute); opacity: .42; }
+.wf-rail span::before { content: ""; position: absolute; left: 0; top: -4px; width: 7px; height: 7px; border-radius: 50%; background: var(--surface); border: 1px solid var(--accent); }
+.wf-rail span.is-done { opacity: .72; }.wf-rail span.is-current { color: var(--text); opacity: 1; }.wf-rail span.is-current::before { background: var(--accent); box-shadow: 0 0 0 6px var(--accent-soft); }
+.wf-rail i { grid-row: 1 / 3; color: var(--accent); font-size: 11px; font-style: normal; }.wf-rail b { font-size: 13px; font-weight: 600; }.wf-rail small { margin-top: 2px; font-family: var(--font-mono); font-size: 10px; line-height: 1.2; white-space: nowrap; }.wf-rail span.is-current small { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .wf-rail * { animation: none !important; } }

@@ -1,0 +1,33 @@
+.mv-scene { position: absolute; inset: 0; overflow: hidden; color: var(--text); font-family: var(--font-body); }
+.mv-header { position: absolute; left: 94px; top: 76px; width: 920px; }
+.mv-header > p { margin: 0 0 20px; color: var(--accent); font-size: 18px; letter-spacing: .14em; }
+.mv-header h1 { margin: 0; font-size: 78px; line-height: 1.02; letter-spacing: -.045em; }
+.mv-header h1 em { color: var(--accent); font-style: normal; }
+.mv-quote { position: absolute; left: 94px; top: 390px; width: 710px; }
+.mv-quote > span { color: var(--accent); font-size: 16px; letter-spacing: .1em; }
+.mv-quote blockquote { min-height: 245px; margin: 34px 0 25px; font-size: 49px; line-height: 1.24; animation: mv-quote-focus 560ms var(--ease-quart) both; }
+.mv-quote > p { margin: 22px 0 0; color: var(--text-mute); font-size: 15px; letter-spacing: .09em; }
+.mv-recorder { position: relative; padding-top: 26px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.mv-recorder__status { position: absolute; left: 0; right: 0; top: 4px; display: flex; justify-content: space-between; color: var(--text-mute); font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; }
+.mv-recorder__status span { color: var(--accent); }.mv-recorder__status span i { display: inline-block; width: 8px; height: 8px; margin-right: 7px; border-radius: 50%; background: var(--accent); animation: mv-rec-blink 1.6s ease-in-out infinite; }
+.mv-wave { position: relative; height: 70px; display: flex; align-items: center; gap: 6px; overflow: hidden; }
+.mv-wave > i { flex: 0 0 7px; height: calc(var(--h) * 1px); background: var(--accent); opacity: .62; transform-origin: center; animation: mv-wave-live 1.45s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -37ms); }
+.mv-wave__playhead { position: absolute; top: 4px; bottom: 4px; width: 2px; background: var(--accent); box-shadow: 0 0 12px var(--accent-glow); animation: mv-playhead 9s linear infinite; }
+.mv-painmap { position: absolute; left: 900px; right: 94px; top: 84px; bottom: 84px; padding: 42px 50px; background: var(--surface-2); border: 1px solid var(--rule); box-shadow: var(--card-shadow); }
+.mv-painmap > p { margin: 0; color: var(--text-mute); font-size: 16px; letter-spacing: .1em; }
+.mv-painmap__line { position: absolute; left: 88px; top: 124px; bottom: 74px; width: 1px; background: var(--rule); }
+.mv-painmap article { position: relative; min-height: 152px; display: grid; grid-template-columns: 70px 1fr; align-content: center; gap: 6px 20px; padding: 16px 28px; opacity: 0; transform: translateX(18px); transition: opacity 440ms var(--ease-quart), transform 440ms var(--ease-quart), background 440ms var(--ease-quart); }
+.mv-painmap article.is-visible { opacity: .42; transform: translateX(0); }
+.mv-painmap article.is-current { opacity: 1; color: var(--surface-2); background: var(--accent); transform: translateX(14px); }
+.mv-painmap article::before { content: ""; position: absolute; left: -12px; top: 66px; width: 15px; height: 15px; border: 2px solid var(--accent); border-radius: 50%; background: var(--surface-2); }
+.mv-painmap article.is-current::before { background: var(--accent); box-shadow: 0 0 0 8px var(--accent-soft); }
+.mv-painmap article i { grid-row: 1 / 3; align-self: center; color: var(--accent); font-size: 39px; }
+.mv-painmap article.is-current i { color: var(--surface-2); }
+.mv-painmap article strong { font-family: var(--font-display-cn); font-size: 28px; }
+.mv-painmap article span { color: var(--text-mute); font-size: 14px; letter-spacing: .08em; }
+.mv-painmap article.is-current span { color: var(--surface-2); }
+@keyframes mv-quote-focus { from { opacity: .35; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes mv-wave-live { 0% { transform: scaleY(.35); opacity: .35; } 55% { transform: scaleY(1); opacity: .75; } 100% { transform: scaleY(.56); opacity: .5; } }
+@keyframes mv-playhead { from { left: 0; opacity: 0; } 5%, 95% { opacity: .9; } to { left: calc(100% - 2px); opacity: 0; } }
+@keyframes mv-rec-blink { 0%, 55% { opacity: 1; } 70%, 100% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .mv-scene *, .mv-scene *::before, .mv-scene *::after { animation: none !important; transition-duration: 1ms !important; }.mv-wave__playhead { left: 62%; } }

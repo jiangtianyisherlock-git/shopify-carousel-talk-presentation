@@ -1,0 +1,41 @@
+.ag-scene { position: absolute; inset: 0; overflow: hidden; color: var(--text); font-family: var(--font-body); }
+.ag-header { position: absolute; left: 94px; top: 80px; width: 820px; }
+.ag-header > p { margin: 0 0 20px; color: var(--accent); font-size: 18px; letter-spacing: .14em; }
+.ag-header h1 { margin: 0; font-size: 75px; line-height: 1.02; letter-spacing: -.045em; }
+.ag-header h1 em { color: var(--accent); font-style: normal; }
+.ag-focus { position: absolute; left: 94px; bottom: 120px; width: 670px; padding-top: 24px; border-top: 1px solid var(--accent); }
+.ag-focus > span { color: var(--accent); font-size: 16px; letter-spacing: .1em; }
+.ag-focus strong { display: block; margin-top: 18px; font-family: var(--font-display-cn); font-size: 38px; }
+.ag-focus p { margin: 12px 0 0; color: var(--text-2); font-size: 21px; line-height: 1.5; animation: ag-focus-in 480ms var(--ease-quart) both; }
+.ag-board { position: absolute; left: 850px; right: 94px; top: 74px; bottom: 74px; padding: 40px; background: var(--surface-2); border: 1px solid var(--rule); box-shadow: var(--card-shadow); }
+.ag-dataflow { position: absolute; left: 70px; right: 70px; top: 494px; height: 8px; z-index: 2; overflow: hidden; opacity: 0; transition: opacity .4s var(--ease-quart); }.ag-dataflow.is-visible { opacity: 1; }.ag-dataflow::before { content: ""; position: absolute; inset: 3px 0 auto; border-top: 1px solid var(--accent); }.ag-dataflow span { position: absolute; top: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 7px var(--accent-soft); animation: ag-packet 5.4s linear infinite; }.ag-dataflow span:nth-child(2) { animation-delay: -1.8s; }.ag-dataflow span:nth-child(3) { animation-delay: -3.6s; }
+.ag-flowmap { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; opacity: 0; pointer-events: none; transition: opacity .4s var(--ease-quart); }.ag-flowmap.is-visible { opacity: 1; }.ag-flowmap path { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 8 9; animation: ag-flow-dash 8s linear infinite; }
+.ag-knowledge { position: absolute; top: 40px; bottom: 350px; width: calc(50% - 50px); padding: 30px; border: 1px solid var(--rule); background: var(--surface); opacity: 0; transform: translateY(16px); transition: opacity 520ms var(--ease-quart), transform 520ms var(--ease-quart), background 520ms var(--ease-quart); }
+.ag-knowledge.is-visible { opacity: 1; transform: translateY(0); }
+.ag-knowledge--merchant { left: 40px; }
+.ag-knowledge--platform { right: 40px; }
+.ag-knowledge--platform.is-current { background: var(--accent-soft); }
+.ag-knowledge > span { color: var(--accent); font-size: 15px; letter-spacing: .1em; }
+.ag-knowledge > strong { display: block; margin: 15px 0 22px; font-family: var(--font-display-cn); font-size: 33px; }
+.ag-knowledge__group { padding: 18px 20px; border-top: 1px solid var(--rule); opacity: 0; transition: opacity 420ms var(--ease-quart), background 420ms var(--ease-quart); }
+.ag-knowledge__group:first-of-type { opacity: 1; }
+.ag-knowledge__group.is-visible { opacity: .55; }
+.ag-knowledge__group.is-current { opacity: 1; background: var(--accent-soft); }
+.ag-knowledge__group b { font-size: 22px; }.ag-knowledge__group p { margin: 9px 0 0; color: var(--text-mute); font-size: 18px; line-height: 1.45; }
+.ag-knowledge--platform > p { margin: 0; color: var(--text-2); font-size: 20px; line-height: 1.6; }
+.ag-platform__signals { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+.ag-platform__signals span { padding: 10px 8px; color: var(--text-mute); border-top: 1px solid var(--accent); font-size: 13px; }
+.ag-bridge { position: absolute; left: 50%; top: 520px; z-index: 3; width: 270px; height: 150px; display: grid; place-items: center; align-content: center; gap: 8px; color: var(--surface-2); background: var(--accent); transform: translate(-50%, -50%) scale(.65); opacity: 0; transition: opacity 520ms var(--ease-overshoot), transform 520ms var(--ease-overshoot); }
+.ag-bridge::before, .ag-bridge::after { content: ""; position: absolute; top: 50%; width: 210px; border-top: 2px solid var(--accent); }
+.ag-bridge::before { right: 100%; }.ag-bridge::after { left: 100%; }
+.ag-bridge.is-visible { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.ag-bridge.is-current { box-shadow: 0 0 0 14px var(--accent-soft); }
+.ag-bridge span { font-size: 13px; letter-spacing: .08em; }.ag-bridge strong { font-family: var(--font-display-cn); font-size: 34px; }.ag-bridge p { margin: 0; font-family: var(--font-mono); font-size: 14px; }
+.ag-outcomes { position: absolute; left: 40px; right: 40px; bottom: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; opacity: 0; transform: translateY(24px); transition: opacity 520ms var(--ease-quart), transform 520ms var(--ease-quart); }
+.ag-outcomes.is-visible { opacity: 1; transform: translateY(0); }
+.ag-outcomes > span { position: relative; min-height: 132px; display: flex; flex-direction: column; justify-content: center; padding: 22px; border-top: 2px solid var(--accent); background: var(--surface); }.ag-outcomes > span > i { position: absolute; left: 50%; top: -5px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); transform: translateX(-50%); animation: ag-outcome-pulse 2.4s ease-in-out infinite; }.ag-outcomes > span:nth-child(2) > i { animation-delay: .4s; }.ag-outcomes > span:nth-child(3) > i { animation-delay: .8s; }
+.ag-outcomes small { color: var(--accent); font-size: 13px; letter-spacing: .08em; }.ag-outcomes strong { margin-top: 13px; font-family: var(--font-display-cn); font-size: 29px; }
+@keyframes ag-focus-in { from { opacity: .35; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes ag-packet { from { left: 0; opacity: 0; } 8%, 92% { opacity: 1; } to { left: calc(100% - 8px); opacity: 0; } }
+@keyframes ag-flow-dash { to { stroke-dashoffset: -68; } } @keyframes ag-outcome-pulse { 50% { box-shadow: 0 0 0 12px var(--accent-soft); } }
+@media (prefers-reduced-motion: reduce) { .ag-scene *, .ag-scene *::before, .ag-scene *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; } }

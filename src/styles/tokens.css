@@ -1,0 +1,45 @@
+:root {
+  --shell: #ddd2c5;
+  --surface: #f4eee5;
+  --surface-2: #fbf7f0;
+  --surface-3: #eee4d8;
+  --text: #2b1d17;
+  --text-2: #4e3b33;
+  --text-mute: #77675e;
+  --text-faint: #9d8d82;
+  --rule: #d9cdc0;
+  --accent: #b6533f;
+  --accent-soft: rgba(182, 83, 63, 0.11);
+  --accent-glow: rgba(182, 83, 63, 0.24);
+
+  --font-display-cn: "Songti SC", "STSong", "SimSun", serif;
+  --font-display-en: Georgia, "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+  --font-features: "tnum", "ss01";
+
+  --r-card: 22px;
+  --r-stage: 0;
+  --rule-w: 1px;
+  --rule-style: solid;
+  --hero-num-font: var(--font-display-en);
+  --hero-num-style: italic;
+  --hero-num-weight: 400;
+  --hero-num-track: -0.04em;
+  --stage-pad-x: 90px;
+  --stage-pad-y: 70px;
+  --card-shadow: 0 1px 0 var(--rule), 0 22px 54px rgba(43, 29, 23, 0.09);
+  --shadow-stage: 0 48px 140px rgba(43, 29, 23, 0.22), 0 0 0 1px var(--rule);
+
+  --dur-quick: 320ms;
+  --dur-base: 620ms;
+  --dur-slow: 920ms;
+  --dur-cinematic: 1250ms;
+
+  --surface-pattern:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  --surface-pattern-size: 48px 48px;
+  --surface-pattern-blend: multiply;
+  --surface-pattern-opacity: 0.38;
+}

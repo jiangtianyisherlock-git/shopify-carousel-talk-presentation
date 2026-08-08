@@ -1,0 +1,34 @@
+.upl-scene { position: absolute; inset: 0; overflow: hidden; color: var(--text); }
+.upl-scene > header { position: absolute; left: 72px; top: 72px; width: 620px; }
+.upl-scene > header > p { margin: 0 0 24px; color: var(--accent); font-size: 14px; letter-spacing: .16em; }
+.upl-scene > header h1 { margin: 0; font-size: 60px; line-height: 1.04; letter-spacing: -.035em; }
+.upl-scene > header h1 em { color: var(--accent); font-style: normal; }
+.upl-scene > header > span { display: block; width: 520px; margin-top: 26px; color: var(--text-2); font-size: 19px; line-height: 1.55; }
+
+.upl-board { position: absolute; left: 720px; right: 76px; top: 70px; bottom: 76px; padding: 34px; display: grid; grid-template-rows: 54px 1fr 112px; gap: 18px; }
+.upl-context { display: grid; grid-template-columns: 1fr 50px 1fr; align-items: center; border-bottom: 1px solid var(--rule); color: var(--text-mute); font-size: 11px; letter-spacing: .12em; }
+.upl-context span:last-child { color: var(--accent); text-align: right; }
+.upl-context i { color: var(--accent); font-family: var(--font-serif); font-size: 24px; font-style: normal; text-align: center; }
+
+.upl-journey { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; min-height: 0; }
+.upl-stage { position: relative; min-width: 0; padding: 22px 18px; display: flex; flex-direction: column; border: 1px solid var(--rule); background: var(--surface); animation: upl-stage-in 560ms var(--ease-quart) both; animation-delay: calc((var(--upl-i, 1) - 1) * 130ms); }
+.upl-stage--1 { --upl-i: 1; opacity: .64; }
+.upl-stage--2 { --upl-i: 2; background: var(--surface-2); }
+.upl-stage--3 { --upl-i: 3; border-color: var(--accent); }
+.upl-stage--4 { --upl-i: 4; color: var(--surface); background: var(--accent); border-color: var(--accent); }
+.upl-stage > div { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; color: var(--text-mute); }
+.upl-stage > div i { color: var(--accent); font-size: 16px; font-style: italic; }
+.upl-stage > div span { font-size: 9px; text-align: right; }
+.upl-stage strong { display: block; margin-top: 34px; font-family: var(--font-display-cn); font-size: 25px; line-height: 1.25; }
+.upl-stage p { margin: 18px 0 0; color: var(--text-2); font-size: 15px; line-height: 1.55; }
+.upl-stage b { position: absolute; right: -20px; top: 50%; z-index: 2; width: 26px; color: var(--accent); background: var(--surface-2); font-family: var(--font-serif); font-size: 24px; font-weight: 400; text-align: center; transform: translateY(-50%); }
+.upl-stage--4 > div, .upl-stage--4 > div i, .upl-stage--4 p { color: var(--surface); }
+.upl-stage--4 > div, .upl-stage--4 p { opacity: .84; }
+
+.upl-turn { padding: 20px 24px; display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 22px; color: var(--surface); background: var(--accent); }
+.upl-turn span { font-size: 10px; letter-spacing: .14em; }
+.upl-turn strong { font-family: var(--font-display-cn); font-size: 23px; line-height: 1.35; }
+.upl-result { position: absolute; left: 34px; right: 34px; bottom: 18px; display: none; }
+
+@keyframes upl-stage-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .upl-scene * { animation-duration: 1ms !important; animation-delay: 0ms !important; } }

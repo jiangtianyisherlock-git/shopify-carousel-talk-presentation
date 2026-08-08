@@ -1,0 +1,566 @@
+[
+  {
+    "chapter": "coldopen",
+    "step": 1,
+    "text": "你给系统一个 Shopify 链接。",
+    "audio": "coldopen/1.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 2,
+    "text": "第一步不是生成，而是抓取并校验商品信息：商品名、类目、卖点、价格、图片视频，以及店铺整体调性。",
+    "audio": "coldopen/2.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 3,
+    "text": "第二步，把同一份商品事实组织成多套可预览的 Carousel Variance，让商家看到不同角度，而不是盲选一个结果。",
+    "audio": "coldopen/3.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 4,
+    "text": "第三步，结合店铺调性、商品卖点和价格语境，生成匹配的 Caption 和 Hashtags。",
+    "audio": "coldopen/4.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 5,
+    "text": "最后，再根据账号所在地区、商品类目和目标人群，确定发布时间与发布节奏，让内容真正进入经营计划。",
+    "audio": "coldopen/5.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 6,
+    "text": "接下来分享的重点，不只是这个结果，而是一个人如何通过 AI Native 工作流，从业务问题一路做到设计、开发测试和上线闭环。",
+    "audio": "coldopen/6.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 1,
+    "text": "我的履历只作为背景线。第一段 AI 经历，是用机器学习的 SVC 模型低成本手搓 OCR 数字识别，把一个边界清楚的问题做成可交付能力。",
+    "audio": "profile/1.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 2,
+    "text": "后来我通过 RPA 构建财务工作流自动化。Month-end 自动扫描 Email 获取 invoice，用 OCR 识别 invoice 和 receipt，再录入 ERP、记入 AP 和 AR。",
+    "audio": "profile/2.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 3,
+    "text": "Deep Learning 阶段，我处理 National Grid 设备数据。方法不是只训练一次：先准备训练、验证和测试集，再进行多模型训练、调参和测试，对比效果与成本，选择最佳模型并接入异常识别和问题预测 Workflow。",
+    "audio": "profile/3.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 4,
+    "text": "第四段，是零到一做抖音商业化 AIGC 一键成片工具 MagicCut。先把业务抽象清楚：商家知道卖什么、卖给谁，却卡在做什么内容、怎么做、怎么投。",
+    "audio": "profile/4.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 5,
+    "text": "MagicCut 接住人、货、场和原始素材，由策略与生成能力批量成片；商家只在需要判断的节点选择和微调，再进入投放。",
+    "audio": "profile/5.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 6,
+    "text": "基础信息、素材资产、策略控制和微量编辑四个模块独立协同，并分别用使用转化率、成片采纳率和投放效果驱动下一轮迭代。",
+    "audio": "profile/6.mp3"
+  },
+  {
+    "chapter": "profile",
+    "step": 7,
+    "text": "回头看，模型从 Machine Learning 的识别、Deep Learning 的预测，走到 LLM 的理解生成和 Agent 的任务执行；Coding Agent 又把技能接入 ideation、设计、开发测试和上线的完整产品生产闭环。",
+    "audio": "profile/7.mp3"
+  },
+  {
+    "chapter": "inactive-data",
+    "step": 1,
+    "text": "我们先看一组数据。BA 总账号约六千一百五十八万，其中近三十天未发文约三千七百零八万。",
+    "audio": "inactive-data/1.mp3"
+  },
+  {
+    "chapter": "inactive-data",
+    "step": 2,
+    "text": "这意味着，BA 近三十天未发文账号占 60.22%。每十个账号里，差不多有六个没发文。",
+    "audio": "inactive-data/2.mp3"
+  },
+  {
+    "chapter": "inactive-data",
+    "step": 3,
+    "text": "更值得注意的是，这些未发文账号里，约 438 万已经有网站链接。这是四百多万套现成经营资产，只是还没有变成 TikTok 内容。",
+    "audio": "inactive-data/3.mp3"
+  },
+  {
+    "chapter": "inactive-data",
+    "step": 4,
+    "text": "vBA 的情况更明显。近三十天未发文占 69.67%，其中接近一半已经有网站链接。",
+    "audio": "inactive-data/4.mp3"
+  },
+  {
+    "chapter": "inactive-data",
+    "step": 5,
+    "text": "数据已经说明了发生什么，但还不能解释为什么。所以下一步，我们直接去听商家怎么说。",
+    "audio": "inactive-data/5.mp3"
+  },
+  {
+    "chapter": "merchant-voice",
+    "step": 1,
+    "text": "我们先不急着定义方案，而是直接听用户说。第一个痛点是，他们不知道该创作什么内容，也经常缺乏创意灵感。",
+    "audio": "merchant-voice/1.mp3"
+  },
+  {
+    "chapter": "merchant-voice",
+    "step": 2,
+    "text": "第二，他们不知道什么内容方向适合 TikTok，什么结构、叙事和元素更可能获得曝光与互动。",
+    "audio": "merchant-voice/2.mp3"
+  },
+  {
+    "chapter": "merchant-voice",
+    "step": 3,
+    "text": "第三，他们不知道应该在什么时间、以什么频率发布，才能获得更多流量。",
+    "audio": "merchant-voice/3.mp3"
+  },
+  {
+    "chapter": "merchant-voice",
+    "step": 4,
+    "text": "第四，单条内容可以外包，但持续内容生产的时间和制作成本很高。",
+    "audio": "merchant-voice/4.mp3"
+  },
+  {
+    "chapter": "merchant-voice",
+    "step": 5,
+    "text": "最后，即使做出来，每个创意方向还需要不断测试和优化。冷启动贵，持续试错更贵。",
+    "audio": "merchant-voice/5.mp3"
+  },
+  {
+    "chapter": "asset-gap",
+    "step": 1,
+    "text": "再看用户已经有什么。他们有成熟的经营资产，包括官网、商品图和视频、卖点信息，并不是从零开始。",
+    "audio": "asset-gap/1.mp3"
+  },
+  {
+    "chapter": "asset-gap",
+    "step": 2,
+    "text": "用户也知道自己的产品定位、目标人群和经营目标。商家知道要卖什么、卖给谁，以及希望获得什么结果。",
+    "audio": "asset-gap/2.mp3"
+  },
+  {
+    "chapter": "asset-gap",
+    "step": 3,
+    "text": "平台知道另一部分信息：什么内容方向、结构、叙事和元素，在不同地区和类目下，更容易获得曝光、互动和转化，也知道最新热点与趋势。",
+    "audio": "asset-gap/3.mp3"
+  },
+  {
+    "chapter": "asset-gap",
+    "step": 4,
+    "text": "所以缺口不是资产，也不是数据，而是中间的转换能力：把用户已知和平台已知，变成具体的内容方向、制作方法、发布时间与发布频率。",
+    "audio": "asset-gap/4.mp3"
+  },
+  {
+    "chapter": "asset-gap",
+    "step": 5,
+    "text": "最终目标也不是单纯生成内容，而是服务原生经营结果：获得曝光和 VV，提升互动和涨粉，并带来原生转化。",
+    "audio": "asset-gap/5.mp3"
+  },
+  {
+    "chapter": "product-io",
+    "step": 1,
+    "text": "先定义终态：用户不该学习内容生产系统，只需要置入已有经营资产，并在引导下表达想卖什么、卖给谁、要什么结果。",
+    "audio": "product-io/1.mp3"
+  },
+  {
+    "chapter": "product-io",
+    "step": 2,
+    "text": "系统接手中间所有复杂度：判断内容方向、生产创意、安排发布节奏，并在持续发布中迭代优化。",
+    "audio": "product-io/2.mp3"
+  },
+  {
+    "chapter": "product-io",
+    "step": 3,
+    "text": "用户最终购买的不是几张图，而是一种经营托管能力——持续获得曝光、互动涨粉和原生转化结果。",
+    "audio": "product-io/3.mp3"
+  },
+  {
+    "chapter": "product-io",
+    "step": 4,
+    "text": "但零到一不能同时服务所有人。MVP 聚焦 OLE Shopify 商家，只读取商品素材、卖点详情、价格折扣，解决内容经营冷启这一个痛点场景：不会发文，也不会制定发布计划。",
+    "audio": "product-io/4.mp3"
+  },
+  {
+    "chapter": "product-io",
+    "step": 5,
+    "text": "聚焦不代表残缺：从资产置入、内容生成、计划编排到内容发布，仍然要跑通完整的 E2E 场景闭环。",
+    "audio": "product-io/5.mp3"
+  },
+  {
+    "chapter": "ai-native",
+    "step": 1,
+    "text": "这次实践不是为了让 AI 完成一次产品开发上线，而是跑通一条从 Demo、设计批评到部署复盘的完整工作流。",
+    "audio": "ai-native/1.mp3"
+  },
+  {
+    "chapter": "ai-native",
+    "step": 2,
+    "text": "八个步骤分别是 Demo、UI Critic、能力架构、可行性验证、模块开发、集成测试、Skill 打包和部署复盘。",
+    "audio": "ai-native/2.mp3"
+  },
+  {
+    "chapter": "ai-native",
+    "step": 3,
+    "text": "第一步仍然从用户体验开始。先制作一个逼近理想态的 Demo，明确用户到底应该怎样使用。",
+    "audio": "ai-native/3.mp3"
+  },
+  {
+    "chapter": "ai-native",
+    "step": 4,
+    "text": "后续每一步都读取前一步留下的上下文和可验证产物，再继续执行、验证和迭代。",
+    "audio": "ai-native/4.mp3"
+  },
+  {
+    "chapter": "ai-native",
+    "step": 5,
+    "text": "AI 可以覆盖整条执行链，但目标、证据、权限边界、取舍和最终验收仍然由人负责。",
+    "audio": "ai-native/5.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 1,
+    "text": "制作 Demo 的第一步，是 keep your user's experience in mind：先定义从经营资产进入，到内容发布托管的 E2E 核心旅程。",
+    "audio": "demo-flow/1.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 2,
+    "text": "旅程里要先划出不需要用户操心的部分。来源验证、商品导入、内容生成、智能排期和发布执行，都应该尽可能自动化。",
+    "audio": "demo-flow/2.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 3,
+    "text": "但目标确认、创意选择和发布前确认需要用户判断，这些节点必须让用户留在 loop 里，而不是假装全自动。",
+    "audio": "demo-flow/3.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 4,
+    "text": "系统还要在关键节点主动反馈：素材是否可信可用、生成进度和失败原因、真实发布预览，以及为什么推荐这个时间，才能建立信任。",
+    "audio": "demo-flow/4.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 5,
+    "text": "约束也要提前进入体验设计，例如每个商品最多生成几个 variance、首期发布周期多长、允许什么来源，以及素材质量不足时如何阻断和恢复。",
+    "audio": "demo-flow/5.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 6,
+    "text": "核心旅程确定后，AI 把它整理成 mini PRD；人工修改打磨，再补入 UI 设计规范，把范围、状态、文案、组件和完成定义变成同一套可执行上下文。",
+    "audio": "demo-flow/6.mp3"
+  },
+  {
+    "chapter": "demo-flow",
+    "step": 7,
+    "text": "最后由这套上下文生成逼近理想态的可交互 Demo。它不是展示稿，而是让体验可以点击、讨论和验收的第一份产品产物。",
+    "audio": "demo-flow/7.mp3"
+  },
+  {
+    "chapter": "mock-loop",
+    "step": 1,
+    "text": "Demo 出来以后，先由人做体验判断：用户意图是否被理解、路径是否清楚、哪些反馈能建立信任，以及哪些复杂度应该删除。",
+    "audio": "mock-loop/1.mp3"
+  },
+  {
+    "chapter": "mock-loop",
+    "step": 2,
+    "text": "同时让 AI 充当 design critic，系统检查状态是否完整、约束是否一致、文案与组件是否统一，以及关键操作是否具备可访问性。",
+    "audio": "mock-loop/2.mp3"
+  },
+  {
+    "chapter": "mock-loop",
+    "step": 3,
+    "text": "浏览器评论可以直接锚定真实页面节点，再映射到组件和代码位置，让体验问题不再停留在抽象描述。",
+    "audio": "mock-loop/3.mp3"
+  },
+  {
+    "chapter": "mock-loop",
+    "step": 4,
+    "text": "人工与 AI 一起打磨细节：完整 URL 自动归一化，只有一个 variance 时隐藏多余控制，选择与预览分区，按钮不遮挡内容。",
+    "audio": "mock-loop/4.mp3"
+  },
+  {
+    "chapter": "mock-loop",
+    "step": 5,
+    "text": "每条评论最后都对应代码修改、语法检查和页面复核。验证后的 Demo mock 因此不只是原型，也成为后续开发和集成继承的前端契约。",
+    "audio": "mock-loop/5.mp3"
+  },
+  {
+    "chapter": "feasibility",
+    "step": 1,
+    "text": "Demo 定义了理想体验，下一步不是直接写大系统，而是从体验反推底层必须支持的核心能力架构。",
+    "audio": "feasibility/1.mp3"
+  },
+  {
+    "chapter": "feasibility",
+    "step": 2,
+    "text": "第一域是 Shopify 资产识别：从公开 URL 获取素材、价格折扣、描述、公司和地区，再提炼类目、卖点、客群与地域。",
+    "audio": "feasibility/2.mp3"
+  },
+  {
+    "chapter": "feasibility",
+    "step": 3,
+    "text": "第二域是 Carousel Engine：完成规格适配、模板加工、卖点文案、轮播排序和 CTA，并生成一到三组 variance。",
+    "audio": "feasibility/3.mp3"
+  },
+  {
+    "chapter": "feasibility",
+    "step": 4,
+    "text": "第三域是发布就绪计划：结合类目、目标人群和时区，生成黄金时间、Caption、Hashtags 和 Organic Post Payload。",
+    "audio": "feasibility/4.mp3"
+  },
+  {
+    "chapter": "feasibility",
+    "step": 5,
+    "text": "这些关键能力在投入正式开发前分别完成可行性验证。证据通过以后，才进入模块开发阶段。",
+    "audio": "feasibility/5.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 1,
+    "text": "底层能力被独立封装成三个 Skill：事实与文案、轮播规划渲染，以及负责发现、编排和排期的主 Skill。",
+    "audio": "modular-skills/1.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 2,
+    "text": "三个 Skill 共享同一份可信商品事实，并持续区分 verified、derived、inferred 和 unknown。",
+    "audio": "modular-skills/2.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 3,
+    "text": "每个 Skill 都明确自己的输入、输出和质量边界，因此可以独立测试、升级或替换。",
+    "audio": "modular-skills/3.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 4,
+    "text": "模块之间不依赖对话记忆。facts、draft、plan、manifest 和 validation 作为结构化产物完成交接。",
+    "audio": "modular-skills/4.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 5,
+    "text": "主 Skill 负责发现、分发、汇合、校验和排期；失败时只把问题返回对应模块修正。",
+    "audio": "modular-skills/5.mp3"
+  },
+  {
+    "chapter": "modular-skills",
+    "step": 6,
+    "text": "真实 Skill Demo 展示的不是三个孤立能力，而是三个独立模块如何跑成一条完整生产链。",
+    "audio": "modular-skills/6.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 1,
+    "text": "完整生产闭环从 H5 提交任务开始。Job API 创建任务，Orchestrator 管理执行状态和失败重试。",
+    "audio": "architecture/1.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 2,
+    "text": "Shared Facts 统一完成店铺识别、商品发现和媒体抓取，形成所有创作模块共同使用的可信事实源。",
+    "audio": "architecture/2.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 3,
+    "text": "Copy Skill 和 Carousel Skill 共享事实输入，但内部实现独立，可以分别升级和替换。",
+    "audio": "architecture/3.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 4,
+    "text": "两条支路输出 draft、plan、manifest 和 validation，再在 Assemble and Validate 节点汇合并自动检查。",
+    "audio": "architecture/4.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 5,
+    "text": "模块之间只要求清楚表达收到什么、交付什么、失败如何表达，内部实现无需彼此了解。",
+    "audio": "architecture/5.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 6,
+    "text": "自动验证后进入 Human Review，由用户选择、编辑和确认文案、轮播与发布时间。",
+    "audio": "architecture/6.mp3"
+  },
+  {
+    "chapter": "architecture",
+    "step": 7,
+    "text": "发布闸门通过才进入 Schedule 或 Publish；文案、渲染和事实问题分别回到对应模块修正并重新验证。",
+    "audio": "architecture/7.mp3"
+  },
+  {
+    "chapter": "integration",
+    "step": 1,
+    "text": "正式集成把直接运行 Python 脚本升级为 Job-based 异步任务服务，并明确前端与后端两条职责泳道。",
+    "audio": "integration/1.mp3"
+  },
+  {
+    "chapter": "integration",
+    "step": 2,
+    "text": "前端调用 POST /api/generate 创建任务，后端立即返回唯一的 job id。",
+    "audio": "integration/2.mp3"
+  },
+  {
+    "chapter": "integration",
+    "step": 3,
+    "text": "后台以 generate_carousel_posts.py 为 Python Orchestrator，依次 Analyze、Plan、Generate 和 Package。",
+    "audio": "integration/3.mp3"
+  },
+  {
+    "chapter": "integration",
+    "step": 4,
+    "text": "前端持续调用 GET /api/jobs/{job_id} 轮询状态，读取 pending、running、progress、result 或 error。",
+    "audio": "integration/4.mp3"
+  },
+  {
+    "chapter": "integration",
+    "step": 5,
+    "text": "任务完成后前端展示结果；超时则 retry 或返回降级结果。前后端只通过稳定 API 和结构化结果衔接。",
+    "audio": "integration/5.mp3"
+  },
+  {
+    "chapter": "testing-uat",
+    "step": 1,
+    "text": "测试先覆盖单模块确定性和负向用例。非 Shopify URL、重复图片、虚构折扣和错误 CTA 都必须被拦住。",
+    "audio": "testing-uat/1.mp3"
+  },
+  {
+    "chapter": "testing-uat",
+    "step": 2,
+    "text": "Pura Vida 用来验证常规 Shopify 店铺的成功路径。",
+    "audio": "testing-uat/2.mp3"
+  },
+  {
+    "chapter": "testing-uat",
+    "step": 3,
+    "text": "Hiut Denim 用来验证 Hydrogen 和 Headless 场景，以及真实域名回退。",
+    "audio": "testing-uat/3.mp3"
+  },
+  {
+    "chapter": "testing-uat",
+    "step": 4,
+    "text": "一次线上 E2E 识别 12 张媒体，生成 1 个 package 和 7 张轮播图，并检查文案与公网图片。",
+    "audio": "testing-uat/4.mp3"
+  },
+  {
+    "chapter": "testing-uat",
+    "step": 5,
+    "text": "真实测试发现 Hiut 被误判为珠宝类目。我们补充 fashion apparel taxonomy，再把问题写回回归。",
+    "audio": "testing-uat/5.mp3"
+  },
+  {
+    "chapter": "deployment",
+    "step": 1,
+    "text": "前端部署在 Vercel，长任务和渲染后端部署在 Render，前端通过统一后端地址代理 API。",
+    "audio": "deployment/1.mp3"
+  },
+  {
+    "chapter": "deployment",
+    "step": 2,
+    "text": "后端用 api healthz 暴露健康状态，异步 job 暴露运行进度。",
+    "audio": "deployment/2.mp3"
+  },
+  {
+    "chapter": "deployment",
+    "step": 3,
+    "text": "部署时发现本地 Swift AppKit renderer 只能运行在 macOS，Render 的 Linux 环境无法使用。",
+    "audio": "deployment/3.mp3"
+  },
+  {
+    "chapter": "deployment",
+    "step": 4,
+    "text": "于是补充 Python 和 Pillow renderer，并处理线上旧 Pillow 版本兼容。",
+    "audio": "deployment/4.mp3"
+  },
+  {
+    "chapter": "deployment",
+    "step": 5,
+    "text": "最后在线验证 healthz、URL、异步任务和 image png 输出。本地成功和线上成功是两个不同验收节点。",
+    "audio": "deployment/5.mp3"
+  },
+  {
+    "chapter": "reflection",
+    "step": 1,
+    "text": "最大的反思是，稳定不能只在创建它的 Agent 和本地环境里成立。不同模型、代码版本、工作目录、依赖、网络和权限都会改变执行结果。",
+    "audio": "reflection/1.mp3"
+  },
+  {
+    "chapter": "reflection",
+    "step": 2,
+    "text": "工程稳定化要形成明确顺序：锁定输入和版本，复现环境，完整执行，验证结果，失败后修复重试，最后打包证据。",
+    "audio": "reflection/2.mp3"
+  },
+  {
+    "chapter": "reflection",
+    "step": 3,
+    "text": "职责闭环也必须清楚。人定义目标、权限边界和验收标准；AI 负责规划、执行、调试、验证、失败后修复，并留下完整证据。",
+    "audio": "reflection/3.mp3"
+  },
+  {
+    "chapter": "reflection",
+    "step": 4,
+    "text": "真正可交付的 Skill 包含三个 Skill、lockfile、manifest、日志、测试、checksum 和结果样例。换 Agent、换受支持环境，仍能复现和验证，才叫稳定。",
+    "audio": "reflection/4.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 1,
+    "text": "把系统拆成独立模块，不只是方便开发。稳定的结构化输入输出，让每个能力都可以单独迭代。",
+    "audio": "future-roadmap/1.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 2,
+    "text": "Carousel 模块可以沉淀不同商品类目的高表现素材模板。",
+    "audio": "future-roadmap/2.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 3,
+    "text": "首屏构图、商品占比、信息层级、卖点顺序和 CTA 都可以根据真实表现持续调优。",
+    "audio": "future-roadmap/3.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 4,
+    "text": "同一份商品事实也可以进入视频脚本、镜头规划和视频生成，补齐内容类型缺口。",
+    "audio": "future-roadmap/4.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 5,
+    "text": "输入层可以从 Shopify 扩展到其他 D2C 平台，甚至一般公司官网。",
+    "audio": "future-roadmap/5.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 6,
+    "text": "行业范围也可以从电商扩展到律所、教培机构和本地服务商。",
+    "audio": "future-roadmap/6.mp3"
+  },
+  {
+    "chapter": "future-roadmap",
+    "step": 7,
+    "text": "这些迭代都发生在独立模块里。经营资产、结构化事实、内容资产和发布计划，最终沉淀为可复用的 AI Native 方法。",
+    "audio": "future-roadmap/7.mp3"
+  }
+]

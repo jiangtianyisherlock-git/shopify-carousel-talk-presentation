@@ -7,19 +7,18 @@ const stages = [["01", "Demo", "先定义理想体验"], ["02", "UI Critic", "�
 
 export default function AiNative({ step }: ChapterStepProps) {
   if (step === 0) return <SectionTransition eyebrow="CHAPTER 03 · FROM VISION TO DELIVERY" title="想清楚之后，" accent="如何真正落地？" note="从体验定义开始，把不确定性拆成可以验证和继承的步骤。" leftLabel="HIGH-LEVEL VISION" rightLabel="AI NATIVE DELIVERY" />;
-  const active = Math.min(step - 1, 4);
-  return <section className={`ain-scene ain-step-${active}`}>
+  return <section className="ain-scene ain-step-4">
     <header><p className="mono">AI NATIVE PRACTICE · E2E</p><h1 className="serif-cn">不是让 AI 做完一次开发，<br /><em>而是跑通一条完整工作流。</em></h1><span>每一步产生可继承的上下文与产物，下一步直接继续。</span></header>
     <div className="ain-map card">
-      {stages.map(([code, title, detail], index) => <article className={index === 0 && active >= 2 ? "is-current" : active >= 1 ? "is-visible" : ""} style={{ "--ain-i": index } as React.CSSProperties} key={code}><i className="mono">{code}</i><strong>{title}</strong><span>{detail}</span></article>)}
-      <div className={`ain-goal ${active >= 3 ? "is-visible" : ""}`}>
+      {stages.map(([code, title, detail], index) => <article className={index === 0 ? "is-current" : "is-visible"} style={{ "--ain-i": index } as React.CSSProperties} key={code}><i className="mono">{code}</i><strong>{title}</strong><span>{detail}</span></article>)}
+      <div className="ain-goal is-visible">
         <div className="ain-goal__title"><span className="mono">PROJECT GOAL</span><strong>交付两类完整产物</strong></div>
         <section className="ain-goal__deliverable ain-goal__deliverable--app">
           <span className="mono">DELIVERABLE · 01</span>
           <strong>一个完整的线上应用</strong>
           <p>从 Shopify URL 输入，到内容生成、计划与发布闭环</p>
         </section>
-        <section className={`ain-goal__deliverable ain-goal__deliverable--skill ${active >= 4 ? "is-visible" : ""}`}>
+        <section className="ain-goal__deliverable ain-goal__deliverable--skill is-visible">
           <span className="mono">DELIVERABLE · 02</span>
           <strong>一套可复用的底层能力 Skill</strong>
           <p>可独立调用、组合测试，并支持跨 Agent 环境交付</p>

@@ -58,8 +58,6 @@ export const CHAPTERS: ChapterDef[] = [
     title: "我的 AI 路径：从认知到技能",
     narrations: profileNarrations,
     Component: Profile,
-    // The three MagicCut states are one diagram; stop before the evolution page.
-    autoAdvance: reveal(4, 5),
   },
   {
     id: "inactive-data",
@@ -71,8 +69,7 @@ export const CHAPTERS: ChapterDef[] = [
   { id: "asset-gap", title: "两边都知道，缺一座转换桥", narrations: assetGapNarrations, Component: AssetGap, autoAdvance: reveal() },
   { id: "product-io", title: "经营托管终态与 MVP 闭环", narrations: productIONarrations, Component: ProductIO, autoAdvance: reveal() },
   { id: "coldopen", title: "High-level vision：一个 Shopify 链接", narrations: coldOpenNarrations, Component: ColdOpen },
-  // Step 0 is the manual “如何落地” transition; its board then unfolds automatically.
-  { id: "ai-native", title: "实践一条 E2E AI Native 工作流", narrations: aiNativeNarrations, Component: AiNative, autoAdvance: reveal(1) },
+  { id: "ai-native", title: "实践一条 E2E AI Native 工作流", narrations: aiNativeNarrations, Component: AiNative },
   // Auto-reveal the opening experience states, then hold before the document flow.
   // Every PRD → Demo reveal is manual; Critic starts in the next chapter.
   { id: "demo-flow", title: "从用户体验生成 MVP Demo", narrations: demoFlowNarrations, Component: DemoFlow, autoAdvance: reveal(0, 2) },

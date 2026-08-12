@@ -46,9 +46,9 @@ function MagicCloud({ compact = false, children }: { compact?: boolean; children
   </strong>;
 }
 
-function MagicCutScene({ active }: { active: number }) {
+function MagicCutScene() {
   const arrow = <i className="pf-magic__arrow">→</i>;
-  return <section className={`pf-scene pf-magic pf-magic--${active}`}>
+  return <section className="pf-scene pf-magic pf-magic--2">
     <header className="pf-magic__header">
       <p className="mono">AI CASE · 04 / MAGICCUT</p>
       <h1 className="serif-cn">从商家经营资产，<em>到可投放 AIGC 成片。</em></h1>
@@ -62,14 +62,14 @@ function MagicCutScene({ active }: { active: number }) {
         <article>商品成交</article>
       </div>
 
-      <div className={`pf-magic__current-row ${active >= 1 ? "is-visible" : ""}`}>
+      <div className="pf-magic__current-row is-visible">
         <div className="pf-magic__row-label"><strong>现阶段主流程</strong><small>中短期必要</small></div>
         <article>用户定义人、货、场</article>{arrow}<article>上传原始视频素材</article>{arrow}
         <MagicCloud compact>MagicCut<small>批量成片</small></MagicCloud>{arrow}
         <article>选择满意的成片</article>{arrow}<article>投放</article>{arrow}<article>商品成交</article>
       </div>
 
-      <div className={`pf-magic__branches ${active >= 2 ? "is-visible" : ""}`}>
+      <div className="pf-magic__branches is-visible">
         <div className="pf-magic__row-label"><strong>分支流程</strong><small>非必要</small></div>
         <div className="pf-magic__module"><span>需要自主输入信息</span><strong>基础信息自定义</strong><i>卖点输入</i><i>营销节点</i><i>脚本文案</i></div>
         <div className="pf-magic__module"><span>原始素材不足</span><strong>素材资产中心</strong><i>自有资产</i><i>平台版权、采购资产</i><i>AIGC/派生素材</i></div>
@@ -78,7 +78,7 @@ function MagicCutScene({ active }: { active: number }) {
         <div className="pf-magic__editor-link"><span>需要更大<br />自由度编辑</span><b>→</b><article>编辑器产品<br />（剪映）</article></div>
       </div>
 
-      <div className={`pf-magic__braces ${active >= 2 ? "is-visible" : ""}`}>
+      <div className="pf-magic__braces is-visible">
         <span>使用转化率</span><span>成片采纳率</span><span>投放效果</span>
       </div>
     </div>
@@ -94,12 +94,12 @@ function EvolutionScene() {
 export default function Profile({ step }: ChapterStepProps) {
   if (step === 0) return <SectionTransition eyebrow="CHAPTER 01 · THE PERSON" title="先看看，" accent="这个人有什么。" note="履历是背景，AI 与模型经历才是接下来要讲的主线。" leftLabel="ONE PERSON" rightLabel="AI EXPERIENCE" />;
   const contentStep = step - 1;
-  const activeCareer = contentStep === 0 ? 1 : contentStep <= 2 ? 2 : contentStep <= 5 ? 4 : 5;
+  const activeCareer = contentStep === 0 ? 1 : contentStep <= 2 ? 2 : contentStep === 3 ? 4 : 5;
   let scene: React.ReactNode = null;
   if (contentStep === 0) scene = <CaseFrame code="AI CASE · 01 / SVC + OCR" title="早期用 SVC，" accent="低成本手搓 OCR。" note="先把一个边界清楚的识别问题，做成具体、可交付的能力。"><OcrVisual /></CaseFrame>;
   else if (contentStep === 1) scene = <CaseFrame code="AI CASE · 02 / RPA WORKFLOW" title="从识别一张票据，" accent="走到财务流程自动化。" note="Month-end 自动扫描、识别、录入与入账，直接降低重复人工成本。"><RpaVisual /></CaseFrame>;
   else if (contentStep === 2) scene = <CaseFrame code="AI CASE · 03 / DEEP LEARNING" title="多模型训练与选择，" accent="最后接入业务 Workflow。" note="National Grid 设备数据：不止训练模型，还要调参、测试、比较与上线。"><GridModelVisual /></CaseFrame>;
-  else if (contentStep >= 3 && contentStep <= 5) scene = <MagicCutScene active={contentStep - 3} />;
-  else if (contentStep === 6) scene = <EvolutionScene />;
-  return <>{scene}{!(contentStep >= 3 && contentStep <= 5) && <CareerRail active={activeCareer} />}</>;
+  else if (contentStep === 3) scene = <MagicCutScene />;
+  else if (contentStep === 4) scene = <EvolutionScene />;
+  return <>{scene}{contentStep !== 3 && <CareerRail active={activeCareer} />}</>;
 }

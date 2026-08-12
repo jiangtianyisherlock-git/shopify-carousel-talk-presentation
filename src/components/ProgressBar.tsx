@@ -17,16 +17,15 @@ const DEFAULT_GITHUB_URL =
   "https://github.com/ConardLi/garden-skills";
 
 /**
- * Hidden-on-hover progress bar, fixed to the bottom of the viewport.
- * Click chapter pill or pip to jump.
+ * Always-visible progress bar, fixed to the bottom of the viewport.
+ * Click a chapter pill or step pip to jump.
  *
  * Width is content-adaptive and capped at `100vw - 32px`; if total chapters
  * (or an active chapter's step pips) overflow, the bar scrolls horizontally
  * instead of squeezing items. The active chapter is auto-scrolled into view
- * on chapter change so it's visible the moment hover reveals the bar.
+ * on chapter change so the current location always remains visible.
  *
- * A GitHub link sits to the right of the viewport, sharing the same hover
- * trigger so it appears/disappears in sync with the bar.
+ * A GitHub link sits to the right of the viewport.
  */
 export function ProgressBar({
   chapters,

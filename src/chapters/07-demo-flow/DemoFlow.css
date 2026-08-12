@@ -55,6 +55,14 @@
 .df-docflow > .is-visible { opacity: 1; transform: translate(0); }
 .df-docflow article::after { content: ""; position: absolute; left: 28px; right: 28px; top: 92px; border-top: 1px solid var(--rule); }
 .df-docflow article.is-final { color: var(--surface); background: var(--accent); border-color: var(--accent); }
+.df-step-1 .df-docflow > * { animation: df-quick-reveal .34s var(--ease-quart) forwards; }
+.df-step-1 .df-docflow > .df-reveal-1 { animation-delay: 0s; }
+.df-step-1 .df-docflow > .df-reveal-2 { animation-delay: .18s; }
+.df-step-1 .df-docflow > .df-reveal-3 { animation-delay: .36s; }
+.df-step-1 .df-docflow > .df-reveal-4 { animation-delay: .54s; }
+.df-step-1 .df-docflow > .df-reveal-5 { animation-delay: .72s; }
+.df-step-1 .df-docflow > .df-reveal-6 { animation-delay: .9s; }
+.df-step-1 .df-docflow > .df-reveal-7 { animation-delay: 1.08s; }
 .df-docflow span { color: var(--accent); font-size: 17px; letter-spacing: .08em; }
 .df-docflow .is-final span { color: var(--surface); opacity: .82; }
 .df-docflow strong { display: block; margin-top: 76px; font-family: var(--font-display-cn); font-size: 34px; line-height: 1.25; }
@@ -68,4 +76,8 @@
 .df-player p { margin: 16px 0 0; color: var(--text-2); font-size: 18px; line-height: 1.55; }
 .df-progress { position: absolute; left: 90px; width: 560px; bottom: 92px; height: 2px; background: var(--rule); }
 .df-progress span { display: block; height: 100%; background: var(--accent); transition: width .42s var(--ease-quart); }
-@media (prefers-reduced-motion: reduce) { .df-scene * { animation: none !important; transition-duration: 1ms !important; } }
+@keyframes df-quick-reveal { to { opacity: 1; transform: translate(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .df-scene * { animation: none !important; transition-duration: 1ms !important; }
+  .df-step-1 .df-docflow > * { opacity: 1 !important; transform: none !important; }
+}

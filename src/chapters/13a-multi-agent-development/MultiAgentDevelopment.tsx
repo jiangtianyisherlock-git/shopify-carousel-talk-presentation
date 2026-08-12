@@ -9,7 +9,8 @@ const moduleAgents = [
 ];
 
 export default function MultiAgentDevelopment({ step }: ChapterStepProps) {
-  const active = Math.min(step, 5);
+  void step;
+  const active = 5;
   return (
     <section className={`ma-scene ma-step-${active}`}>
       <header className="ma-title">

@@ -10,14 +10,15 @@ const branches = [
 ] as const;
 
 export default function FutureRoadmap({ step }: ChapterStepProps) {
-  const active = Math.min(step + 1, 7);
+  void step;
+  const active = 7;
   return (
     <section className={`fr-scene fr-step-${active}`}>
       <header>
         <p className="mono">WHAT'S NEXT</p>
         <h1 className="serif-cn">每个模块，<br /><em>都可以独立迭代。</em></h1>
       </header>
-      <div className="fr-board card">
+      <div className="fr-board fr-board--sequential card">
         <svg viewBox="0 0 1080 700" aria-hidden="true">
           <path className={active >= 2 ? "is-visible" : ""} d="M540 350 C430 250 360 160 230 120" />
           <path className={active >= 3 ? "is-visible" : ""} d="M540 350 C430 330 340 330 190 350" />
@@ -27,7 +28,7 @@ export default function FutureRoadmap({ step }: ChapterStepProps) {
         </svg>
         <div className={`fr-core ${active >= 1 ? "is-visible" : ""}`}><span className="mono">STABLE INPUT / OUTPUT</span><strong>模块独立升级</strong><p>上层流程无需整体重做</p></div>
         {branches.map(([id, title, detail, threshold]) => (
-          <article className={`fr-branch fr-branch--${id} ${active >= threshold ? "is-visible" : ""} ${active === threshold ? "is-current" : ""}`} key={id}>
+          <article className={`fr-branch fr-branch--${id} ${active >= threshold ? "is-visible" : ""}`} key={id}>
             <strong>{title}</strong><p>{detail}</p>
           </article>
         ))}

@@ -10,7 +10,8 @@ const focusCopy = [
 ];
 
 export default function AssetGap({ step }: ChapterStepProps) {
-  const active = Math.min(step, focusCopy.length - 1);
+  void step;
+  const active = focusCopy.length - 1;
   const focus = focusCopy[active]!;
   return (
     <section className={`ag-scene ag-active-${active}`}>

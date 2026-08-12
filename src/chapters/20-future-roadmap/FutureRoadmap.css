@@ -22,5 +22,25 @@
 .fr-method span { font-size: 20px; white-space: nowrap; }
 .fr-method i { margin-left: 22px; color: var(--accent); font-style: normal; }
 .fr-method strong { margin-left: auto; font-family: var(--font-display-cn); font-size: 28px; }
+.fr-board--sequential .fr-core { animation: fr-pop .32s var(--ease-quart) both; }
+.fr-board--sequential svg path:nth-child(1) { animation-delay: .22s; }
+.fr-board--sequential svg path:nth-child(2) { animation-delay: .42s; }
+.fr-board--sequential svg path:nth-child(3) { animation-delay: .62s; }
+.fr-board--sequential svg path:nth-child(4) { animation-delay: .82s; }
+.fr-board--sequential svg path:nth-child(5) { animation-delay: 1.02s; }
+.fr-board--sequential .fr-branch { opacity: 0; animation: fr-branch-in .34s var(--ease-quart) both; }
+.fr-board--sequential .fr-branch--templates { animation-delay: .34s; }
+.fr-board--sequential .fr-branch--quality { animation-delay: .54s; }
+.fr-board--sequential .fr-branch--video { animation-delay: .74s; }
+.fr-board--sequential .fr-branch--sources { animation-delay: .94s; }
+.fr-board--sequential .fr-branch--industries { animation-delay: 1.14s; }
+.fr-board--sequential + .fr-method { animation: fr-method-in .36s 1.34s var(--ease-quart) both; }
 @keyframes fr-draw { to { stroke-dashoffset: 0; } }
-@media (prefers-reduced-motion: reduce) { .fr-scene * { animation-duration: 1ms !important; transition-duration: 1ms !important; } }
+@keyframes fr-pop { from { opacity: 0; transform: translate(-50%, -50%) scale(.9); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+@keyframes fr-branch-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; visibility: visible; transform: translateY(0); } }
+@keyframes fr-method-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .fr-scene * { animation-duration: 1ms !important; animation-delay: 0s !important; transition-duration: 1ms !important; }
+  .fr-board--sequential .fr-branch,
+  .fr-board--sequential + .fr-method { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+}

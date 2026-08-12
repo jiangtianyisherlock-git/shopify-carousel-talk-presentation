@@ -36,7 +36,8 @@ const RuntimeStep = ({
 );
 
 export default function Architecture({ step }: ChapterStepProps) {
-  const active = Math.min(step, 6);
+  void step;
+  const active = 6;
 
   return (
     <section className={`ar-scene ar-step-${active}`}>

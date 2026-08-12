@@ -66,24 +66,23 @@ export const CHAPTERS: ChapterDef[] = [
     Component: InactiveData,
   },
   { id: "merchant-voice", title: "听听用户卡在哪里", narrations: merchantVoiceNarrations, Component: MerchantVoice, autoAdvance: reveal() },
-  { id: "asset-gap", title: "两边都知道，缺一座转换桥", narrations: assetGapNarrations, Component: AssetGap, autoAdvance: reveal() },
-  { id: "product-io", title: "经营托管终态与 MVP 闭环", narrations: productIONarrations, Component: ProductIO, autoAdvance: reveal() },
+  { id: "asset-gap", title: "两边都知道，缺一座转换桥", narrations: assetGapNarrations, Component: AssetGap },
+  { id: "product-io", title: "经营托管终态与 MVP 闭环", narrations: productIONarrations, Component: ProductIO },
   { id: "coldopen", title: "High-level vision：一个 Shopify 链接", narrations: coldOpenNarrations, Component: ColdOpen },
   { id: "ai-native", title: "实践一条 E2E AI Native 工作流", narrations: aiNativeNarrations, Component: AiNative },
-  // Auto-reveal the opening experience states, then hold before the document flow.
-  // Every PRD → Demo reveal is manual; Critic starts in the next chapter.
-  { id: "demo-flow", title: "从用户体验生成 MVP Demo", narrations: demoFlowNarrations, Component: DemoFlow, autoAdvance: reveal(0, 2) },
+  // Demo-flow uses manual pages; the document-flow contents reveal quickly within page two.
+  { id: "demo-flow", title: "从用户体验生成 MVP Demo", narrations: demoFlowNarrations, Component: DemoFlow },
   // Keep the embedded Demo video on a manual page; only the critic board reveals in-frame.
   { id: "mock-loop", title: "Human + AI Design Critic", narrations: mockLoopNarrations, Component: MockLoop, autoAdvance: reveal(1) },
-  { id: "feasibility", title: "先拆不确定性", narrations: feasibilityNarrations, Component: Feasibility, autoAdvance: reveal() },
-  // Reveal the module chain automatically, then hold before the full-screen Demo overlay.
-  { id: "modular-skills", title: "三个 Skill，一条流水线", narrations: modularSkillsNarrations, Component: ModularSkills, autoAdvance: reveal(0, 3) },
-  { id: "multi-agent-development", title: "六个 Agent 按边界协作", narrations: multiAgentDevelopmentNarrations, Component: MultiAgentDevelopment, autoAdvance: reveal() },
-  { id: "integration", title: "模块完成后再串联", narrations: integrationNarrations, Component: Integration, autoAdvance: reveal() },
-  { id: "architecture", title: "能力模块如何协同", narrations: architectureNarrations, Component: Architecture, autoAdvance: reveal() },
+  { id: "feasibility", title: "先拆不确定性", narrations: feasibilityNarrations, Component: Feasibility },
+  // Modular skill architecture is shown in full; outer navigation remains manual.
+  { id: "modular-skills", title: "三个 Skill，一条流水线", narrations: modularSkillsNarrations, Component: ModularSkills },
+  { id: "multi-agent-development", title: "六个 Agent 按边界协作", narrations: multiAgentDevelopmentNarrations, Component: MultiAgentDevelopment },
+  { id: "integration", title: "模块完成后再串联", narrations: integrationNarrations, Component: Integration },
+  { id: "architecture", title: "能力模块如何协同", narrations: architectureNarrations, Component: Architecture },
   { id: "testing-uat", title: "从回归到真实商家", narrations: testingUatNarrations, Component: TestingUat, autoAdvance: reveal() },
   { id: "deployment", title: "本地能跑不等于线上能跑", narrations: deploymentNarrations, Component: Deployment, autoAdvance: reveal() },
   { id: "reflection-transition", title: "说说心得和后续计划", narrations: reflectionTransitionNarrations, Component: ReflectionTransition },
-  { id: "future-roadmap", title: "每个模块都可以独立迭代", narrations: futureRoadmapNarrations, Component: FutureRoadmap, autoAdvance: reveal() },
+  { id: "future-roadmap", title: "每个模块都可以独立迭代", narrations: futureRoadmapNarrations, Component: FutureRoadmap },
   { id: "user-problem-lesson", title: "用户问题才是起点", narrations: userProblemLessonNarrations, Component: UserProblemLesson },
 ];

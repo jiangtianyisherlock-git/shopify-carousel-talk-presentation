@@ -9,7 +9,8 @@ const domains = [
 ];
 
 export default function Feasibility({ step }: ChapterStepProps) {
-  const active = Math.min(step, 4);
+  void step;
+  const active = 4;
   return <section className={`fs-scene fs-step-${active}`}>
     <header><p className="mono">STEP 03–04 · ARCHITECTURE → FEASIBILITY</p><h1 className="serif-cn">Fail Small,<br /><em>Fail Early</em></h1><span>根据 Demo 的体验，反推底层核心能力。</span></header>
     <div className="fs-board card">

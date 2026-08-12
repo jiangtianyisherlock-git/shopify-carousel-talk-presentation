@@ -10,7 +10,8 @@ const contractFields = [
 ];
 
 export default function Integration({ step }: ChapterStepProps) {
-  const active = Math.min(step, 4);
+  void step;
+  const active = 4;
   return <section className={`it-scene it-step-${active}`}>
     <header>
       <p className="mono">STEP 06 · JOB-BASED API</p>

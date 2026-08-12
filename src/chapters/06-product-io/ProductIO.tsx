@@ -15,7 +15,8 @@ const loop = [
 ];
 
 export default function ProductIO({ step }: ChapterStepProps) {
-  const active = Math.min(step, 4);
+  void step;
+  const active = 4;
   return (
     <section className={`pio-scene pio-step-${active}`}>
       <header className="pio-header">

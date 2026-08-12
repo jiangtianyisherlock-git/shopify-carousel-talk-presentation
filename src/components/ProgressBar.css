@@ -1,4 +1,4 @@
-.pb-hover {
+.pb-dock {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -11,6 +11,7 @@
   padding: 0 68px 0 16px;
   box-sizing: border-box;
   pointer-events: auto;
+  min-width: 0;
 }
 .pb {
   width: max-content;
@@ -34,6 +35,10 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--text-faint) transparent;
+  /* This navigation is a persistent dock, never a hover-only reveal. */
+  opacity: 1;
+  visibility: visible;
+  transform: none;
 }
 .pb::-webkit-scrollbar {
   height: 5px;
@@ -128,7 +133,7 @@
 }
 
 @media (max-width: 760px) {
-  .pb-hover {
+  .pb-dock {
     min-height: 72px;
     padding-left: 8px;
     padding-right: 58px;

@@ -44,8 +44,8 @@ export function ProgressBar({
   }, [cursor.chapter]);
 
   return (
-    <div className="pb-hover" data-no-advance>
-      <div className="pb">
+    <div className="pb-dock" data-no-advance>
+      <div className="pb" aria-label="章节导航">
         {chapters.map((c, i) => {
           const isActive = i === cursor.chapter;
           return (
